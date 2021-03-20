@@ -1,0 +1,55 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.question-lab {
+    color: red;
+}
+
+.container {
+    font-weight: bold;
+}
+
+#add{
+    color:white;
+    background-color: rgb(0, 167, 14);
+    border-radius: 8px;
+    border-color: rgb(0, 167, 14);
+}
+
+#delete{
+    color:white;
+    background-color: rgba(167, 0, 0, 0.788);
+    border-radius: 8px;
+    border-color: rgba(167, 0, 0, 0.788);
+}
+
+#save{
+    color:white;
+    background-color: rgba(0, 162, 255, 0.788);
+    border-radius: 8px;
+    border-color: rgba(0, 162, 255, 0.788);
+}
+
+#back{
+    color:white;
+    background-color: rgba(204, 207, 0, 0.788);
+    border-radius: 8px;
+    border-color:rgba(204, 207, 0, 0.788);
+}
+
+.question{
+    border: 1px;
+    background-color: aquamarine;
+    border-style: groove;
+    padding: 2px;
+    margin: 5px;
+}
+
+#addQuestion{
+    display: none;
+}
+
+#editQuestion{
+    display: none;
+}

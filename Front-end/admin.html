@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="css/admin.css">
+
+</head>
+
+<body>
+
+    <div id="quiz"></div>
+
+    <div id="addQuestion">
+        
+            <form id= "formdata">
+                <label for="createquestion">Question:</label><br>
+                <input style = "width: 500px; height: 50px;" id="createquestion" name="createquestion"><br>
+                <label id = "labeloption1" for="option1">Answer 1: </label>
+                <input type="text" id="option1" name="option1">
+                <br>
+                <label id = "labeloption2" for="option2">Answer 2: </label>
+                <input type="text" id="option2" name="option2">
+                <br>
+            </form><br>
+            <button id = "addoption" onclick = "addanswerfield()">+</button><br><br>
+            <label for="corrAns">Correct Answer</label><br>
+            <select name="corans" id="selectCorrAns">
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select><br><br>
+            
+            <button onclick = "submitQuestion()" type="submit" value="Submit">Submit</button>
+            <button onclick = "canceladdition()" type="submit" value="Submit">Cancel</button><br><br>
+    </div>
+
+    <div id="editQuestion">
+        <h2> Edit Question</h2>
+        <form id= "editformdata">
+            <label for="editexistingquestion">Question:</label><br>
+            <input style = "width: 500px; height: 50px;" id="editexistingquestion" name="editexistingquestion"><br>
+            <label id = "labeleditoption1" for="editoption1">Answer 1: </label>
+            <input type="text" id="editoption1" name="editoption1">
+            <br>
+            <label id = "labeleditoption2" for="editoption2">Answer 2: </label>
+            <input type="text" id="editoption2" name="editoption2">
+            <br>
+            <label id = "labeleditoption3" for="editoption3">Answer 3: </label>
+            <input type="text" id="editoption3" name="editoption3">
+            <br>
+            <label id = "labeleditoption4" for="editoption4">Answer 4: </label>
+            <input type="text" id="editoption4" name="editoption4">
+            <br>
+        </form><br>
+        <label for="editcorrAns">Correct Answer</label><br>
+        <select name="editcorans" id="editselectCorrAns">
+            
+        </select><br><br>
+        
+        <button onclick = "submiteditedQuestion()" type="submit" value="Submit">Save and Submit</button>
+        <button onclick = "canceledition()" type="submit" value="Submit">Cancel</button><br><br>
+</div>
+
+    <button id="add"> Add Question</button>
+
+    <a href="home.html"><button id="back"> Back </button></a>
+
+    <script src="js/admin.js">
+    </script>
+
+</body>
+
+
+</html>
